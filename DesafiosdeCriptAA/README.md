@@ -26,14 +26,17 @@ localdelivery=127.0.0.1:7777
 # Iniciar 
 
 Numa 1 consola:
+
 -----------------------------
-cd ..\challenge1
-java hjStreamServerAES.java movies/cars.dat localhost 8888
+- cd ..\challenge1
+- java hjStreamServerAES.java movies/cars.dat localhost 8888
 ----------------------------------
+
 Numa 2 consola:
+
 -------------------------
-cd ..\challenge1
-java hjUDPproxyAES
+- cd ..\challenge1
+- java hjUDPproxyAES
 -------------------------
 
 # Challenge2 (ChaCha20-Poly1305)
@@ -41,14 +44,17 @@ java hjUDPproxyAES
 # Iniciar
 
 Numa 1 consola:
+
 --------------------------
-cd ..\challenge2
-java hjStreamServer.java movies/cars.dat localhost 8888
+- cd ..\challenge2
+- java hjStreamServer.java movies/cars.dat localhost 8888
 ------------------------------
+
 Numa 2 consola:
+
 -----------------------------
-cd ..\challenge2
-java hjUDPproxy
+- cd ..\challenge2
+- java hjUDPproxy
 -------------------------------
 
 # Challenge 3 (DPRG + XOR)
@@ -56,13 +62,15 @@ java hjUDPproxy
 # Iniciar
 
 Numa 1 consola:
+
 --------------------------------
-cd ..\challenge3
-java hjStreamServerDPRG.java movies/cars.dat localhost 8888
+- cd ..\challenge3
+- java hjStreamServerDPRG.java movies/cars.dat localhost 8888
 -------------------------------------
 
 Noutra consola:
+
 ----------------------------------
-cd ..\challenge3
-java hjUDPproxyDPRG
+- cd ..\challenge3
+- java hjUDPproxyDPRG
 ------------------------------------
